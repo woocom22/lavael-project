@@ -9,3 +9,4 @@ Route::get('/', function () {
 });
 
 Route::get('/profile/{id}', [ProfileController::class, 'index']);
+Route::get('/cookie', [ProfileController::class, 'setCookie']);
