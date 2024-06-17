@@ -28,8 +28,7 @@ class ProfileController extends Controller
         $domain =  $_SERVER['SERVER_NAME'];
         $secure = false;
         $httpOnly = true;
-        $cookie = cookie($name, $value, $minutes, $path, $domain, $secure, $httpOnly);
 
-        return response('Say hello')->cookie( $cookie, 200);
+        return response('Say hello')->cookie( $name, $value, $minutes, $path, $domain, $secure, $httpOnly, 200);
     }
 }
