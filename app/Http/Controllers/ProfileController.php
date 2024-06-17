@@ -6,9 +6,9 @@ use Illuminate\Http\Request;
 
 class ProfileController extends Controller
 {
-    function index(Request $request){
-        $id = $request->id;
-        return $id;
-
+    function index($id){
+        $name = "Donal Trump";
+        $age = "75";
+        
     }
 }
